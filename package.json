@@ -7,9 +7,13 @@
     "lib": "lib",
     "test": "test"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+//   "scripts": {
+//     "test": "echo \"Error: no test specified\" && exit 1"
+//   },
+"scripts": {
+  "test": "mocha --recursive test",
+  "bump-version": "npm version patch"
+},
   "keywords": [],
   "author": "",
   "license": "ISC"
