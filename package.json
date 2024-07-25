@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "description": "A new Flutter project.",
   "main": "app.js",
+  "start": "webpack-dev-server --hot",
   "directories": {
     "lib": "lib",
     "test": "test"
   },
   "scripts": {
-    "test": "node ./node_modules/mocha/bin/mocha --timeout=80000 ./app.js",
+    "test": "node ./node_modules/mocha/bin/mocha --timeout=80000 ./app.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
-}
+  "license": "ISC",
+  }
