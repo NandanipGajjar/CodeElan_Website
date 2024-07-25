@@ -5,13 +5,15 @@
   "main": "app.js",
   "start": "webpack-dev-server --hot",
   "directories": {
-    "lib": "lib",
-    "test": "test"
+    "lib": "lib"
   },
   "scripts": {
-    "test": "node ./app.js"
+    "start": "node ./app.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
   }
+}
