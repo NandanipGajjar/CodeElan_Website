@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       onGenerateRoute: (settings) => RouterGenerate.generateRoute(settings),
       // home: IPSoolutionsUI(),
-      home: HomePage(),
+      // home: HomePage(),
     );
   }
 }
