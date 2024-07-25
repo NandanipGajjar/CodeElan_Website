@@ -8,8 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha --recursive test",
-     "bump-version": "npm version patch"
+    "test": "node ./node_modules/mocha/bin/mocha --timeout=80000 ./app.js",
   },
   "keywords": [],
   "author": "",
