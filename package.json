@@ -9,7 +9,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "node ./node_modules/mocha/bin/mocha --timeout=80000 ./app.js"
+    "test": "node ./app.js"
   },
   "keywords": [],
   "author": "",
