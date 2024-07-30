@@ -10,7 +10,6 @@ import 'UI/screens/Services/adopt_cloud.dart';
 import 'UI/screens/Services/service.dart';
 import 'UI/screens/Solutions/IPSolutions/IPSolutionsUI.dart';
 import 'UI/screens/contact-us.dart';
-import 'newUIHomePage.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -33,10 +32,10 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      // initialRoute: '/',
-      // onGenerateRoute: (settings) => RouterGenerate.generateRoute(settings),
+      initialRoute: '/',
+      onGenerateRoute: (settings) => RouterGenerate.generateRoute(settings),
       // home: Appbar(),
-      home: HomePage(),
+      // home: HomePage(),
     );
   }
 }
