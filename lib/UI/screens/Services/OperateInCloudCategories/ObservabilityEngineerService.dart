@@ -202,7 +202,7 @@ class _ObservabilityEngineeringServiceState
                           axis: Axis.horizontal,
                           axisAlignment: -1,
                           child: Image.asset(
-                            '5pillar.jpg',
+                            'images/5pillar.jpg',
                             height: 300,
                           ),
                         ),
@@ -326,7 +326,7 @@ class _ObservabilityEngineeringServiceState
                                 axis: Axis.horizontal,
                                 axisAlignment: -5,
                                 child: Image.asset(
-                                  '5pillar.jpg',
+                                  'images/5pillar.jpg',
                                   height: 300,
                                 ),
                               ),
@@ -599,7 +599,7 @@ class _ObservabilityEngineeringServiceState
                       axis: Axis.horizontal,
                       axisAlignment: -1,
                       child: Image.asset(
-                        'cloud-services.png',
+                        'images/cloud-services.png',
                         height: 400,
                       ),
                     ),
@@ -635,7 +635,7 @@ class _ObservabilityEngineeringServiceState
                             axis: Axis.horizontal,
                             axisAlignment: -1,
                             child: Image.asset(
-                              'cloud-services.png',
+                              'images/cloud-services.png',
                               height: 400,
                             ),
                           ),
@@ -701,7 +701,7 @@ class _ObservabilityEngineeringServiceState
                     width: width * .01,
                   ),
                   Image.asset(
-                    'exclusiveFeatures.png',
+                    'images/exclusiveFeatures.png',
                     height: height * .3,
                     width: width * .35,
                     alignment: Alignment.topCenter,
@@ -783,7 +783,7 @@ class _ObservabilityEngineeringServiceState
 
                 Center(
                   child: Image.asset(
-                    'exclusiveFeatures.png',
+                    'images/exclusiveFeatures.png',
                     height: height * .3,
                     width: width * .35,
                     alignment: Alignment.center,
@@ -860,7 +860,7 @@ class _ObservabilityEngineeringServiceState
                         padding: const EdgeInsets.all(15),
                         child: ClipOval(
                           child: Image.asset(
-                            'Logo-Inverted.jpg',
+                            'images/Logo-Inverted.jpg',
                             // width: 100.0,
                           ),
                         ),
@@ -882,7 +882,7 @@ class _ObservabilityEngineeringServiceState
                       padding: const EdgeInsets.all(15),
                       child: ClipOval(
                         child: Image.asset(
-                          'Logo-Inverted.jpg',
+                          'images/Logo-Inverted.jpg',
                           // width: 100.0,
                         ),
                       ),
@@ -1173,7 +1173,7 @@ class _ObservabilityEngineeringServiceState
                               child: Container(
                                 color: AppColor.grey,
                                 child: Image.asset(
-                                  'Male-User.png',
+                                  'images/Male-User.png',
                                   alignment: Alignment.topCenter,
                                   height: height * .1,
                                   // width: 100.0,
@@ -1486,7 +1486,7 @@ class _ObservabilityEngineeringServiceState
             ? Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset("phone-image.png"),
+                  Image.asset("images/phone-image.png"),
                   SizedBox(
                     width: width * .02,
                   ),
@@ -1556,7 +1556,7 @@ class _ObservabilityEngineeringServiceState
                 children: [
                   Row(
                     children: [
-                      Image.asset("phone-image.png"),
+                      Image.asset("images/phone-image.png"),
                       SizedBox(
                         width: width * .02,
                       ),

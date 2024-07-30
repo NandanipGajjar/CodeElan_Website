@@ -200,7 +200,7 @@ class _CloudOperationServiceState extends State<CloudOperationService>
                           axis: Axis.horizontal,
                           axisAlignment: -1,
                           child: Image.asset(
-                            '5pillar.jpg',
+                            'images/5pillar.jpg',
                             height: 300,
                           ),
                         ),
@@ -324,7 +324,7 @@ class _CloudOperationServiceState extends State<CloudOperationService>
                                 axis: Axis.horizontal,
                                 axisAlignment: -5,
                                 child: Image.asset(
-                                  '5pillar.jpg',
+                                  'images/5pillar.jpg',
                                   height: 300,
                                 ),
                               ),
@@ -868,7 +868,7 @@ class _CloudOperationServiceState extends State<CloudOperationService>
                         padding: const EdgeInsets.all(15),
                         child: ClipOval(
                           child: Image.asset(
-                            'Logo-Inverted.jpg',
+                            'images/Logo-Inverted.jpg',
                             // width: 100.0,
                           ),
                         ),
@@ -890,7 +890,7 @@ class _CloudOperationServiceState extends State<CloudOperationService>
                       padding: const EdgeInsets.all(15),
                       child: ClipOval(
                         child: Image.asset(
-                          'Logo-Inverted.jpg',
+                          'images/Logo-Inverted.jpg',
                           // width: 100.0,
                         ),
                       ),

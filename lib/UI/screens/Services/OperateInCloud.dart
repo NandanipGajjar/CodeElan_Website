@@ -41,7 +41,7 @@ class _OperateInCloudServiceState extends State<OperateInCloudService> {
               alignment: Alignment.center,
               children: [
                 Image.asset(
-                  'Product-engineering.jpg',
+                  'images/Product-engineering.jpg',
                   height: 300,
                   width: width,
                   fit: BoxFit.cover,
@@ -197,7 +197,7 @@ class _OperateInCloudServiceState extends State<OperateInCloudService> {
                 ],
               ),
               Image.asset(
-                'operatecloud1.jpg',
+                'images/operatecloud1.jpg',
                 height: height * .8,
               ),
             ],
@@ -248,7 +248,7 @@ class _OperateInCloudServiceState extends State<OperateInCloudService> {
                   },
                 ),
                 Image.asset(
-                  'operatecloud1.jpg',
+                  'images/operatecloud1.jpg',
                   height: height * .8,
                 )
               ],
@@ -266,7 +266,7 @@ class _OperateInCloudServiceState extends State<OperateInCloudService> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Image.asset(
-                  'Managed-Observabilit1.jpg',
+                  'images/Managed-Observabilit1.jpg',
                   height: height * .6,
                 ),
                 SizedBox(width: width * .05),
@@ -336,7 +336,7 @@ class _OperateInCloudServiceState extends State<OperateInCloudService> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'Managed-Observabilit1.jpg',
+                    'images/Managed-Observabilit1.jpg',
                     // height: height * .7,
                   ),
                   SizedBox(
@@ -460,7 +460,7 @@ class _OperateInCloudServiceState extends State<OperateInCloudService> {
                   width: width * .05,
                 ),
                 Image.asset(
-                  'Observability-Engineering.jpg',
+                  'images/Observability-Engineering.jpg',
                   height: height * .5,
                 ),
               ],
@@ -470,7 +470,7 @@ class _OperateInCloudServiceState extends State<OperateInCloudService> {
               child: Column(
                 children: [
                   Image.asset(
-                    'Observability-Engineering.jpg',
+                    'images/Observability-Engineering.jpg',
                     height: height * .5,
                   ),
                   Text(
@@ -529,7 +529,7 @@ class _OperateInCloudServiceState extends State<OperateInCloudService> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Image.asset(
-                  'Cloud-Operations.jpg',
+                  'images/Cloud-Operations.jpg',
                   width: width * .4,
                 ),
                 SizedBox(
@@ -602,7 +602,7 @@ class _OperateInCloudServiceState extends State<OperateInCloudService> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'Cloud-Operations.jpg',
+                    'images/Cloud-Operations.jpg',
                     // fit: BoxFit.cover,
                   ),
                   SizedBox(
@@ -660,27 +660,27 @@ class _OperateInCloudServiceState extends State<OperateInCloudService> {
           ? Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                iconBox('icons-server.png', 'Comprehensive Services'),
-                iconBox('user-setting.png', 'Engineering-Led Methodology'),
+                iconBox('images/icons-server.png', 'Comprehensive Services'),
+                iconBox('images/user-setting.png', 'Engineering-Led Methodology'),
                 iconBox(
-                    'swiftTengibleResult.png', 'Swift And Tangible Results'),
-                iconBox('process-icon.png', 'Value-Driven Operations'),
+                    'images/swiftTengibleResult.png', 'Swift And Tangible Results'),
+                iconBox('images/process-icon.png', 'Value-Driven Operations'),
               ],
             )
           : Column(children: [
-              iconBox('icons-server.png', 'Comprehensive Services'),
+              iconBox('images/icons-server.png', 'Comprehensive Services'),
               SizedBox(
                 height: height * .1,
               ),
-              iconBox('user-setting.png', 'Engineering-Led Methodology'),
+              iconBox('images/user-setting.png', 'Engineering-Led Methodology'),
               SizedBox(
                 height: height * .1,
               ),
-              iconBox('swiftTengibleResult.png', 'Swift And Tangible Results'),
+              iconBox('images/swiftTengibleResult.png', 'Swift And Tangible Results'),
               SizedBox(
                 height: height * .1,
               ),
-              iconBox('process-icon.png', 'Value-Driven Operations'),
+              iconBox('images/process-icon.png', 'Value-Driven Operations'),
               SizedBox(
                 height: height * .1,
               ),
@@ -912,7 +912,7 @@ class _OperateInCloudServiceState extends State<OperateInCloudService> {
                     top: -10,
                     left: 50,
                     child: Image.asset(
-                      "get-quote.png",
+                      "images/get-quote.png",
                       color: AppColor.grey,
                       height: 60,
                     ),

@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
   double height = 0.0;
   double width = 0.0;
   double size = 0.0;
-  
+
   @override
   Widget build(BuildContext context) {
     height = MediaQuery.of(context).size.height;
@@ -27,51 +27,53 @@ class _HomePageState extends State<HomePage> {
     size = MediaQuery.of(context).size.longestSide;
 
     return Scafold_Dekstop_widget(
-    //   backgroundColor: Color.fromARGB(255, 255, 255, 255),
-    //   appBar:   Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
-    //     ? PreferredSize(
-    //     preferredSize: Size.fromHeight(0),  child: SizedBox()):AppBar(
-    //   backgroundColor: Colors.white,
-    //   elevation: 3,
-    //   surfaceTintColor: Colors.white,
-    //   leading: InkWell(
-    //     onTap: (() {
-    //       Navigator.pushReplacement(
-    //         context,
-    //         MaterialPageRoute(
-    //           builder: (context) => HomePage(),
-    //         ),
-    //       );
-    //     }),
-    //     child: Padding(
-    //       padding: const EdgeInsets.all(8.0),
-    //       child: Image.asset(
-    //         'assets/cd-logo.jpg',
-    //         height: 50.0, alignment: Alignment.centerLeft,
-    //         // width: 100.0,
-    //       ),
-    //     ),
-    //   ),
-    //
-    //   leadingWidth: 200,
-    //   automaticallyImplyLeading: false,
-    // ),
-    // endDrawer: Drawer(
-    //   child: Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
-    //       ? SizedBox(): Mobile_Header(),
-    // ),
+      //   backgroundColor: Color.fromARGB(255, 255, 255, 255),
+      //   appBar:   Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
+      //     ? PreferredSize(
+      //     preferredSize: Size.fromHeight(0),  child: SizedBox()):AppBar(
+      //   backgroundColor: Colors.white,
+      //   elevation: 3,
+      //   surfaceTintColor: Colors.white,
+      //   leading: InkWell(
+      //     onTap: (() {
+      //       Navigator.pushReplacement(
+      //         context,
+      //         MaterialPageRoute(
+      //           builder: (context) => HomePage(),
+      //         ),
+      //       );
+      //     }),
+      //     child: Padding(
+      //       padding: const EdgeInsets.all(8.0),
+      //       child: Image.asset(
+      //         'images/cd-logo.jpg',
+      //         height: 50.0, alignment: Alignment.centerLeft,
+      //         // width: 100.0,
+      //       ),
+      //     ),
+      //   ),
+      //
+      //   leadingWidth: 200,
+      //   automaticallyImplyLeading: false,
+      // ),
+      // endDrawer: Drawer(
+      //   child: Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
+      //       ? SizedBox(): Mobile_Header(),
+      // ),
       body: Container(
-        // color: Colors.white,
+        color: Colors.white,
         child: ListView(
           children: [
-            Responsive.isDesktop(context) || Responsive.isk4Desktop(context)? TabsWidget():SizedBox(),
-    //         Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
-    // ?            Scafold_Dekstop_widget()
-    //             : SizedBox(),
+            Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
+                ? TabsWidget()
+                : const SizedBox(),
+            //         Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
+            // ?            Scafold_Dekstop_widget()
+            //             : SizedBox(),
             getStarted(),
             services(),
-            CompaniesSliderWidget(),
-            testimonials(),
+            const CompaniesSliderWidget(),
+            testimonialshead(),
             testimonialSlider(),
             aboutUs(),
             leadership(), leadershipSlider(),
@@ -79,7 +81,7 @@ class _HomePageState extends State<HomePage> {
             contactForm(),
             helpdesk(),
             blog(),
-            SizedBox(
+            const SizedBox(
               height: 20,
             )
           ],
@@ -108,7 +110,7 @@ class _HomePageState extends State<HomePage> {
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Image.asset(
-                'assets/cd-logo.jpg',
+                'images/cd-logo.jpg',
                 height: 50.0, alignment: Alignment.centerLeft,
                 // width: 100.0,
               ),
@@ -124,7 +126,7 @@ class _HomePageState extends State<HomePage> {
               height: height * .1,
               child: Row(
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.email_outlined,
                     color: Colors.green,
                     size: 38,
@@ -137,7 +139,7 @@ class _HomePageState extends State<HomePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                             border: Border(
                                 bottom: BorderSide(color: Colors.black))),
                         child: Text('Mail us for help:',
@@ -158,7 +160,7 @@ class _HomePageState extends State<HomePage> {
                   SizedBox(
                     width: width * .02,
                   ),
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.only(top: 30, bottom: 30),
                     child: VerticalDivider(
                       color: Colors.grey,
@@ -172,7 +174,7 @@ class _HomePageState extends State<HomePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                             border: Border(
                                 bottom: BorderSide(color: Colors.black))),
                         child: Text('Pune, MH',
@@ -191,7 +193,7 @@ class _HomePageState extends State<HomePage> {
                   SizedBox(
                     width: width * .02,
                   ),
-                  Icon(
+                  const Icon(
                     Icons.call,
                     color: Colors.green,
                     size: 35,
@@ -261,8 +263,8 @@ class _HomePageState extends State<HomePage> {
                   alignment: Alignment.center,
                   height: height * .08,
                   width: width * .1,
-                  decoration: BoxDecoration(shape: BoxShape.rectangle),
-                  child: Text('Services +',
+                  decoration: const BoxDecoration(shape: BoxShape.rectangle),
+                  child: const Text('Services +',
                       style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -290,8 +292,8 @@ class _HomePageState extends State<HomePage> {
                   alignment: Alignment.center,
                   height: height * .08,
                   width: width * .1,
-                  decoration: BoxDecoration(shape: BoxShape.rectangle),
-                  child: Text('Solutions +',
+                  decoration: const BoxDecoration(shape: BoxShape.rectangle),
+                  child: const Text('Solutions +',
                       style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -319,8 +321,8 @@ class _HomePageState extends State<HomePage> {
                   alignment: Alignment.center,
                   height: height * .08,
                   width: width * .1,
-                  decoration: BoxDecoration(shape: BoxShape.rectangle),
-                  child: Text('Insights +',
+                  decoration: const BoxDecoration(shape: BoxShape.rectangle),
+                  child: const Text('Insights +',
                       style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -348,8 +350,8 @@ class _HomePageState extends State<HomePage> {
                   alignment: Alignment.center,
                   height: height * .08,
                   width: width * .1,
-                  decoration: BoxDecoration(shape: BoxShape.rectangle),
-                  child: Text('About Us',
+                  decoration: const BoxDecoration(shape: BoxShape.rectangle),
+                  child: const Text('About Us',
                       style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -377,8 +379,8 @@ class _HomePageState extends State<HomePage> {
                   alignment: Alignment.center,
                   height: height * .08,
                   width: width * .1,
-                  decoration: BoxDecoration(shape: BoxShape.rectangle),
-                  child: Text('Contact Us',
+                  decoration: const BoxDecoration(shape: BoxShape.rectangle),
+                  child: const Text('Contact Us',
                       style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -408,10 +410,10 @@ class _HomePageState extends State<HomePage> {
                   alignment: Alignment.center,
                   height: height * .8,
                   // width: 50,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.rectangle,
                   ),
-                  child: Icon(
+                  child: const Icon(
                     Icons.arrow_outward_sharp,
                     color: Colors.white,
                   ),
@@ -433,10 +435,10 @@ class _HomePageState extends State<HomePage> {
                 child: Container(
                   alignment: Alignment.center,
                   height: height * .8,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.rectangle,
                   ),
-                  child: Text('Request a Demo',
+                  child: const Text('Request a Demo',
                       style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -457,11 +459,14 @@ class _HomePageState extends State<HomePage> {
         alignment: Alignment.centerLeft,
         children: [
           Image.asset(
-            'cd-home.jpg',
+            'images/cd-home.jpg',
           ),
           Padding(
             padding: EdgeInsets.only(
-              left: MediaQuery.of(context).size.width * .12,
+              left: Responsive.isDesktop(context) ||
+                      Responsive.isk4Desktop(context)
+                  ? width * .08
+                  : width * .02,
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -503,10 +508,10 @@ class _HomePageState extends State<HomePage> {
                                 fontWeight: FontWeight.bold)),
                       ]),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                Text(
+                const Text(
                     "We give you the platform to convert your\nideas into technology excatly the way you\nwant.",
                     style: TextStyle(
                       color: Color.fromRGBO(79, 79, 103, 1),
@@ -514,10 +519,17 @@ class _HomePageState extends State<HomePage> {
                       fontSize: 22,
                       letterSpacing: .5,
                     )),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                TextButton(
+                GradientButton(
+                  onPressed: () {},
+                  btnText: 'Get Started',
+                  height: 50,
+                  padding: const EdgeInsets.only(
+                      left: 50, right: 50, top: 20, bottom: 20),
+                ),
+                /*  TextButton(
                   onPressed: () {},
                   style: ButtonStyle(
                     backgroundColor: WidgetStateProperty.resolveWith<Color>(
@@ -544,8 +556,8 @@ class _HomePageState extends State<HomePage> {
                             color: Colors.white,
                             letterSpacing: 1)),
                   ),
-                ),
-                SizedBox(
+                ),*/
+                const SizedBox(
                   height: 20,
                 ),
               ],
@@ -558,11 +570,17 @@ class _HomePageState extends State<HomePage> {
 
   Widget services() {
     return Container(
-        width: 100,
-        alignment: Alignment.center,
-        color: Color.fromRGBO(235, 235, 235, 1),
-        padding: EdgeInsets.all(20),
-        child: Column(
+         alignment: Alignment.center,
+        // color: Color.fromRGBO(235, 235, 235, 1),
+        padding: EdgeInsets.only(
+          left: Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
+              ? width * .08
+              : width * .02,
+          right: Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
+              ? width * .08
+              : width * .02,
+          top: 0,
+        ),        child: const Column(
           children: [
             Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
               SizedBox(
@@ -598,7 +616,7 @@ class _HomePageState extends State<HomePage> {
               height: 20,
             ),
             Text(
-              "CodeElan is a product engineering services company focused on high quality AGILE software product development starting from\nsoftware blueprinting and wireframing to deployments at scale. We partner with global enterprises, helping them to apply\ninnovation in every facet of business.",
+              "CodeElan is a product engineering services company focused on high quality AGILE software product development starting from software blueprinting and wire framing to deployments at scale. We partner with global enterprises, helping them to apply innovation in every facet of business.",
               style: TextStyle(
                 color: Color.fromRGBO(79, 79, 103, 1),
                 fontFamily: 'Arial',
@@ -613,77 +631,154 @@ class _HomePageState extends State<HomePage> {
           ],
         ));
   }
-
-
-  Widget testimonials() {
+  Widget testimonialshead() {
     return Container(
-        width: 100,
         alignment: Alignment.center,
-        color: Color.fromRGBO(235, 235, 235, 1),
-        padding: EdgeInsets.all(20),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Text(
-                        "Testimonials",
-                        style: TextStyle(color: AppColor.green, fontSize: 16),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      SizedBox(
-                          width: 40,
-                          child: Divider(
-                            thickness: 3,
-                            color: AppColor.green,
-                          )),
-                    ]),
-                Row(mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    SizedBox(
-                      width:Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
-                          ? width * .28:width *.3,
-                      child: Text(
-                        "We are very glad to get client review.",
-                        style: TextStyle(
-                            fontFamily: 'Arial',
-                            fontSize: Responsive.isDesktop(context) ||
-                                    Responsive.isk4Desktop(context)
-                                ? 36
-                                : 26,
-                            color: Color.fromRGBO(29, 27, 76, 1),
-                            letterSpacing: .5,
-                            fontWeight: FontWeight.bold),
-                        textAlign: TextAlign.left,
-                      ),
-                    ),SizedBox(width: width*.05,),
-                    SizedBox(
-                      width:Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
-                          ? width * .28:width *.5,                      child: Text(
-                        "Let our success stories highlight why our clients trust us for all their software development queries, quality engineering initiatives and digital transformation implementation.",
-                        style: TextStyle(
-                          color: Color.fromRGBO(79, 79, 103, 1),
-                          fontFamily: 'Arial',
-                          fontSize: 16,
-                          letterSpacing: .5,
-                        ),
-                        textAlign: TextAlign.start,
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-          ],
-        ));
+        // color: Color.fromRGBO(235, 235, 235, 1),
+        padding: EdgeInsets.only(
+          left: Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
+              ? width * .08
+              : width * .02,
+          right: Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
+              ? width * .08
+              : width * .02,
+          top: 0,
+        ),        child: const Column(
+      children: [
+        Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
+          SizedBox(
+              width: 40,
+              child: Divider(
+                thickness: 3,
+                color: AppColor.green,
+              )),
+          SizedBox(
+            width: 10,
+          ),
+          Text(
+            "Testimonials",
+            style: TextStyle(color: AppColor.green, fontSize: 16),
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          SizedBox(
+              width: 40,
+              child: Divider(
+                thickness: 3,
+                color: AppColor.green,
+              )),
+        ]),
+        Text("We are very glad to get client review.",
+            style: TextStyle(
+                fontFamily: 'Arial',
+                fontSize: 36,
+                letterSpacing: .5,
+                fontWeight: FontWeight.bold)),
+        SizedBox(
+          height: 20,
+        ),
+        Text(
+          "Let our success stories highlight why our clients trust us for all their software development queries, quality engineering initiatives and digital transformation implementation.",
+          style: TextStyle(
+            color: Color.fromRGBO(79, 79, 103, 1),
+            fontFamily: 'Arial',
+            fontSize: 16,
+            letterSpacing: .5,
+          ),
+          textAlign: TextAlign.center,
+        ),
+        SizedBox(
+          height: 20,
+        ),
+      ],
+    ));
   }
+  // Widget testimonials() {
+  //   return Container(
+  //       // width: 100,
+  //       alignment: Alignment.center,
+  //       // color: Color.fromRGBO(235, 235, 235, 1),
+  //       padding: EdgeInsets.only(
+  //         left: Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
+  //             ? width * .08
+  //             : width * .02,
+  //         right: Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
+  //             ? width * .08
+  //             : width * .02,
+  //         top: 0,
+  //       ),        child: Row(
+  //         mainAxisAlignment: MainAxisAlignment.center,
+  //         children: [
+  //           Column(
+  //             crossAxisAlignment: CrossAxisAlignment.start,
+  //             mainAxisAlignment: MainAxisAlignment.start,
+  //             children: [
+  //               const Row(
+  //                   mainAxisAlignment: MainAxisAlignment.center,
+  //                   children: <Widget>[
+  //                     Text(
+  //                       "Testimonials",
+  //                       style: TextStyle(color: AppColor.green, fontSize: 16),
+  //                     ),
+  //                     SizedBox(
+  //                       width: 10,
+  //                     ),
+  //                     SizedBox(
+  //                         width: 40,
+  //                         child: Divider(
+  //                           thickness: 3,
+  //                           color: AppColor.green,
+  //                         )),
+  //                   ]),
+  //               Row(
+  //                 mainAxisAlignment: MainAxisAlignment.start,
+  //                 children: [
+  //                   SizedBox(
+  //                     width: Responsive.isDesktop(context) ||
+  //                             Responsive.isk4Desktop(context)
+  //                         ? width * .28
+  //                         : width * .3,
+  //                     child: Text(
+  //                       "We are very glad to get client review.",
+  //                       style: TextStyle(
+  //                           fontFamily: 'Arial',
+  //                           fontSize: Responsive.isDesktop(context) ||
+  //                                   Responsive.isk4Desktop(context)
+  //                               ? 36
+  //                               : 26,
+  //                           color: const Color.fromRGBO(29, 27, 76, 1),
+  //                           letterSpacing: .5,
+  //                           fontWeight: FontWeight.bold),
+  //                       textAlign: TextAlign.left,
+  //                     ),
+  //                   ),
+  //                   SizedBox(
+  //                     width: width * .05,
+  //                   ),
+  //                   SizedBox(
+  //                     width: Responsive.isDesktop(context) ||
+  //                             Responsive.isk4Desktop(context)
+  //                         ? width * .28
+  //                         : width * .5,
+  //                     child: const Text(
+  //                       "Let our success stories highlight why our clients trust us for all their software development queries, quality engineering initiatives and digital transformation implementation.",
+  //                       style: TextStyle(
+  //                         color: Color.fromRGBO(79, 79, 103, 1),
+  //                         fontFamily: 'Arial',
+  //                         fontSize: 16,
+  //                         letterSpacing: .5,
+  //                       ),
+  //                       textAlign: TextAlign.start,
+  //                     ),
+  //                   ),
+  //                 ],
+  //               ),
+  //             ],
+  //           ),
+  //         ],
+  //       ));
+  // }
 
   Widget testimonialSlider() {
     return Container(
@@ -692,11 +787,11 @@ class _HomePageState extends State<HomePage> {
           : 400,
       width: double.infinity,
       alignment: Alignment.center,
-      color: Color.fromRGBO(235, 235, 235, 1),
-      padding: EdgeInsets.all(20),
+      // color: const Color.fromRGBO(235, 235, 235, 1),
+      padding: const EdgeInsets.all(20),
       child: ListView.builder(
           shrinkWrap: true,
-          physics: AlwaysScrollableScrollPhysics(),
+          physics: const AlwaysScrollableScrollPhysics(),
           scrollDirection: Axis.horizontal,
           itemCount: testimonialData.length,
           itemBuilder: (BuildContext context, int index) => Container(
@@ -713,12 +808,12 @@ class _HomePageState extends State<HomePage> {
                         child: Padding(
                           padding: Responsive.isDesktop(context) ||
                                   Responsive.isk4Desktop(context)
-                              ? EdgeInsets.only(
+                              ? const EdgeInsets.only(
                                   left: 50, right: 50, top: 20, bottom: 20)
-                              : EdgeInsets.all(10),
+                              : const EdgeInsets.all(10),
                           child: Column(children: [
                             Card(
-                              margin: EdgeInsets.all(5),
+                              margin: const EdgeInsets.all(5),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(
                                     25), // Adjust the radius as needed
@@ -730,14 +825,14 @@ class _HomePageState extends State<HomePage> {
                               ),
                               clipBehavior: Clip.antiAlias,
                               elevation: 5.0,
-                             ),
+                            ),
                             SizedBox(
                               height: height * .03,
                             ),
                             Text(
                               testimonialData[index].description,
                               style: TextStyle(
-                                color: Color.fromRGBO(79, 79, 103, 1),
+                                color: const Color.fromRGBO(79, 79, 103, 1),
                                 fontFamily: 'Arial',
                                 fontSize: Responsive.isDesktop(context) ||
                                         Responsive.isk4Desktop(context)
@@ -770,7 +865,7 @@ class _HomePageState extends State<HomePage> {
                             Text(
                               testimonialData[index].designation,
                               style: TextStyle(
-                                color: Color.fromRGBO(79, 79, 103, 1),
+                                color: const Color.fromRGBO(79, 79, 103, 1),
                                 fontFamily: 'Arial',
                                 fontSize: Responsive.isDesktop(context) ||
                                         Responsive.isk4Desktop(context)
@@ -785,14 +880,14 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Positioned(
                     top: -10,
                     left: 50,
                     child: Image.asset(
-                      "get-quote.png",
+                      "images/get-quote.png",
                       color: AppColor.grey,
                       height: 60,
                     ),
@@ -809,7 +904,7 @@ class _HomePageState extends State<HomePage> {
               scrollDirection: Axis.horizontal,
               itemCount: 15,
               itemBuilder: (BuildContext context, int index) => Card(
-                child: Center(child: Column(children: [PositionedDirectional(child: Image.asset("get-quote.png",height: 100,))],)),
+                child: Center(child: Column(children: [PositionedDirectional(child: Image.asset("images/get-quote.png",height: 100,))],)),
               ),
             ),
           ),
@@ -824,10 +919,11 @@ class _HomePageState extends State<HomePage> {
 
       // padding: const EdgeInsets.all(8.0),
       child: Image.asset(
-        'assets/aboutuss.png',
+        'images/aboutuss.png',
         alignment: Alignment.center,
         height: Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
-          ? height*.6:   height * .3,
+            ? height * .6
+            : height * .3,
       ),
     );
   }
@@ -837,7 +933,7 @@ class _HomePageState extends State<HomePage> {
         width: 100,
         alignment: Alignment.center,
         // color: Color.fromRGBO(235, 235, 235, 1),
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -845,7 +941,7 @@ class _HomePageState extends State<HomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Row(
+                const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Text(
@@ -865,8 +961,11 @@ class _HomePageState extends State<HomePage> {
                 Row(
                   children: [
                     SizedBox(
-                      width:Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
-                          ? width * .28:width *.3,                         child: Text(
+                      width: Responsive.isDesktop(context) ||
+                              Responsive.isk4Desktop(context)
+                          ? width * .28
+                          : width * .3,
+                      child: Text(
                         "Our small team with big ideas",
                         style: TextStyle(
                             fontFamily: 'Arial',
@@ -874,15 +973,21 @@ class _HomePageState extends State<HomePage> {
                                     Responsive.isk4Desktop(context)
                                 ? 36
                                 : 26,
-                            color: Color.fromRGBO(29, 27, 76, 1),
+                            color: const Color.fromRGBO(29, 27, 76, 1),
                             letterSpacing: .5,
                             fontWeight: FontWeight.bold),
                         textAlign: TextAlign.left,
                       ),
-                    ),SizedBox(width: width*.05,),
+                    ),
                     SizedBox(
-                      width:Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
-                          ? width * .28:width *.5,                         child: Text(
+                      width: width * .05,
+                    ),
+                    SizedBox(
+                      width: Responsive.isDesktop(context) ||
+                              Responsive.isk4Desktop(context)
+                          ? width * .28
+                          : width * .5,
+                      child: const Text(
                         "Meet the CodeElan Technologies leadership team who envisioned building one of the finest custom software development, automation services and superior Quality engineering capabilities for global enterprises.",
                         style: TextStyle(
                           color: Color.fromRGBO(79, 79, 103, 1),
@@ -908,11 +1013,11 @@ class _HomePageState extends State<HomePage> {
           : 400,
       width: double.infinity,
       alignment: Alignment.center,
-      color: Color.fromRGBO(235, 235, 235, 1),
-      padding: EdgeInsets.all(20),
+      // color: const Color.fromRGBO(235, 235, 235, 1),
+      padding: const EdgeInsets.all(20),
       child: ListView.builder(
           shrinkWrap: true,
-          physics: AlwaysScrollableScrollPhysics(),
+          physics: const AlwaysScrollableScrollPhysics(),
           scrollDirection: Axis.horizontal,
           itemCount: leadershipData.length,
           itemBuilder: (BuildContext context, int index) => Container(
@@ -927,16 +1032,19 @@ class _HomePageState extends State<HomePage> {
                     child: Column(children: [
                       Container(
                         height: height * .01,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: AppColor.primary,
                           borderRadius: BorderRadius.only(
                             topRight: Radius.circular(40),
                             topLeft: Radius.circular(40),
                           ),
                         ),
-                      ),SizedBox(height: height*.03,),
+                      ),
+                      SizedBox(
+                        height: height * .03,
+                      ),
                       Card(
-                        margin: EdgeInsets.all(5),
+                        margin: const EdgeInsets.all(5),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(
                               120), // Adjust the radius as needed
@@ -973,7 +1081,7 @@ class _HomePageState extends State<HomePage> {
                       Text(
                         leadershipData[index].designation,
                         style: TextStyle(
-                          color: Color.fromRGBO(79, 79, 103, 1),
+                          color: const Color.fromRGBO(79, 79, 103, 1),
                           fontFamily: 'Arial',
                           fontSize: Responsive.isDesktop(context) ||
                                   Responsive.isk4Desktop(context)
@@ -1010,45 +1118,47 @@ class _HomePageState extends State<HomePage> {
     return Container(
         width: 100,
         alignment: Alignment.center,
-        color: Color.fromRGBO(235, 235, 235, 1),
-        padding: EdgeInsets.all(20),
+        // color: const Color.fromRGBO(235, 235, 235, 1),
+        padding: const EdgeInsets.all(20),
         child: Column(
           children: [
-            Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
-              SizedBox(
-                  width: 40,
-                  child: Divider(
-                    thickness: 3,
-                    color: AppColor.green,
-                  )),
-              SizedBox(
-                width: 10,
-              ),
-              Text(
-                "Contact us",
-                style: TextStyle(color: AppColor.green, fontSize: 16),
-              ),
-              SizedBox(
-                width: 10,
-              ),
-              SizedBox(
-                  width: 40,
-                  child: Divider(
-                    thickness: 3,
-                    color: AppColor.green,
-                  )),
-            ]),
-            Text("Let’s start discussing your new idea",
+            const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  SizedBox(
+                      width: 40,
+                      child: Divider(
+                        thickness: 3,
+                        color: AppColor.green,
+                      )),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Text(
+                    "Contact us",
+                    style: TextStyle(color: AppColor.green, fontSize: 16),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  SizedBox(
+                      width: 40,
+                      child: Divider(
+                        thickness: 3,
+                        color: AppColor.green,
+                      )),
+                ]),
+            const Text("Let’s start discussing your new idea",
                 style: TextStyle(
                     fontFamily: 'Arial',
                     fontSize: 36,
                     letterSpacing: .5,
                     fontWeight: FontWeight.bold)),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
-                ? Text(
+                ? const Text(
                     "As a Software Development and QA expert, We help organizations adjust to the\nexpanding significance of current market.",
                     style: TextStyle(
                       color: Color.fromRGBO(79, 79, 103, 1),
@@ -1059,7 +1169,7 @@ class _HomePageState extends State<HomePage> {
                     textAlign: TextAlign.center,
                     maxLines: 2,
                   )
-                : Text(
+                : const Text(
                     "As a Software Development and QA expert, We help organizations adjust to the\nexpanding significance of current market.",
                     style: TextStyle(
                       color: Color.fromRGBO(79, 79, 103, 1),
@@ -1070,7 +1180,7 @@ class _HomePageState extends State<HomePage> {
                     textAlign: TextAlign.center,
                     maxLines: 2,
                   ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
           ],
@@ -1105,17 +1215,17 @@ class _HomePageState extends State<HomePage> {
                   : width,
               child: TextField(
                 autofocus: false,
-                style: TextStyle(fontSize: 15.0, color: Colors.black),
+                style: const TextStyle(fontSize: 15.0, color: Colors.black),
                 decoration: InputDecoration(
                   fillColor: Colors.white,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15.0),
-                    borderSide: BorderSide(color: Colors.green),
+                    borderSide: const BorderSide(color: Colors.green),
                   ),
                   focusColor: Colors.green,
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15.0),
-                    borderSide: BorderSide(color: Colors.green),
+                    borderSide: const BorderSide(color: Colors.green),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15.0),
@@ -1136,17 +1246,17 @@ class _HomePageState extends State<HomePage> {
                   : width,
               child: TextField(
                 autofocus: false,
-                style: TextStyle(fontSize: 15.0, color: Colors.black),
+                style: const TextStyle(fontSize: 15.0, color: Colors.black),
                 decoration: InputDecoration(
                   fillColor: Colors.white,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15.0),
-                    borderSide: BorderSide(color: Colors.green),
+                    borderSide: const BorderSide(color: Colors.green),
                   ),
                   focusColor: Colors.green,
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15.0),
-                    borderSide: BorderSide(color: Colors.green),
+                    borderSide: const BorderSide(color: Colors.green),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15.0),
@@ -1167,17 +1277,17 @@ class _HomePageState extends State<HomePage> {
                   : width,
               child: TextField(
                 autofocus: false,
-                style: TextStyle(fontSize: 15.0, color: Colors.black),
+                style: const TextStyle(fontSize: 15.0, color: Colors.black),
                 decoration: InputDecoration(
                   fillColor: Colors.white,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15.0),
-                    borderSide: BorderSide(color: Colors.green),
+                    borderSide: const BorderSide(color: Colors.green),
                   ),
                   focusColor: Colors.green,
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15.0),
-                    borderSide: BorderSide(color: Colors.green),
+                    borderSide: const BorderSide(color: Colors.green),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15.0),
@@ -1198,17 +1308,17 @@ class _HomePageState extends State<HomePage> {
                   : width,
               child: TextField(
                 autofocus: false,
-                style: TextStyle(fontSize: 15.0, color: Colors.black),
+                style: const TextStyle(fontSize: 15.0, color: Colors.black),
                 decoration: InputDecoration(
                   fillColor: Colors.white,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15.0),
-                    borderSide: BorderSide(color: Colors.green),
+                    borderSide: const BorderSide(color: Colors.green),
                   ),
                   focusColor: Colors.green,
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15.0),
-                    borderSide: BorderSide(color: Colors.green),
+                    borderSide: const BorderSide(color: Colors.green),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15.0),
@@ -1227,8 +1337,8 @@ class _HomePageState extends State<HomePage> {
               onPressed: () {
                 if (_formKey.currentState!.validate()) {
                   // If the form is valid, display a Snackbar.
-                  ScaffoldMessenger.of(context)
-                      .showSnackBar(SnackBar(content: Text('Processing Data')));
+                  ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(content: Text('Processing Data')));
                 }
               },
               style: ButtonStyle(
@@ -1246,10 +1356,10 @@ class _HomePageState extends State<HomePage> {
                 alignment: Alignment.center,
                 height: 40,
                 width: 150,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   shape: BoxShape.rectangle,
                 ),
-                child: Text('Get a Quote',
+                child: const Text('Get a Quote',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w700,
@@ -1284,151 +1394,153 @@ class _HomePageState extends State<HomePage> {
         // color: Color.fromRGBO(235, 235, 235, 1),
         child: Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
             ? Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset("phone-image.png"),
-            SizedBox(
-              width: width * .02,
-            ),
-            SizedBox(
-              width: width * .28,
-              child: Text(
-                "Leverage and amplify your product value by cooperating with CodeElan Technologies. Collaborate with our innovative custom software development company!",
-                style: TextStyle(
-                  color: Color.fromRGBO(79, 79, 103, 1),
-                  fontFamily: 'Arial',
-                  fontSize: Responsive.isDesktop(context) ||
-                          Responsive.isk4Desktop(context)
-                      ? 16
-                      : 10,
-                  letterSpacing: .5,
-                ),
-                textAlign: TextAlign.left,
-              ),
-            ),
-            SizedBox(
-              width: width * .02,
-            ),
-            DottedDashedLine(
-              height: 40,
-              width: 0,
-              axis: Axis.vertical,
-              dashHeight: 8,
-              dashColor: Colors.orange,
-            ),
-            SizedBox(
-              width: width * .02,
-            ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  "Help Desk 24h/7",
-                  style: TextStyle(
-                    color: AppColor.green,
-                    fontFamily: 'Arial',
-                    fontSize: 16,
-                    letterSpacing: .5,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset("images/phone-image.png"),
+                  SizedBox(
+                    width: width * .02,
                   ),
-                ),
-                Text(
-                  "8484914105",
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontFamily: 'Arial',
-                    fontWeight: FontWeight.bold,
-                    fontSize: Responsive.isDesktop(context) ||
-                            Responsive.isk4Desktop(context)
-                        ? 30
-                        : 25,
-                    letterSpacing: .5,
-                  ),
-                ),
-              ],
-            ),
-            SizedBox(
-              height: height * .2,
-            )
-          ],
-        ):Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Row(
-              children: [
-                Image.asset("phone-image.png"),  SizedBox(
-                  width: width * .02,
-                ),
-                SizedBox(
-                  width: width * .5,
-                  child: Text(
-                    "Leverage and amplify your product value by cooperating with CodeElan Technologies. Collaborate with our innovative custom software development company!",
-                    style: TextStyle(
-                      color: Color.fromRGBO(79, 79, 103, 1),
-                      fontFamily: 'Arial',
-                      fontSize: Responsive.isDesktop(context) ||
-                          Responsive.isk4Desktop(context)
-                          ? 16
-                          : 10,
-                      letterSpacing: .5,
+                  SizedBox(
+                    width: width * .28,
+                    child: Text(
+                      "Leverage and amplify your product value by cooperating with CodeElan Technologies. Collaborate with our innovative custom software development company!",
+                      style: TextStyle(
+                        color: const Color.fromRGBO(79, 79, 103, 1),
+                        fontFamily: 'Arial',
+                        fontSize: Responsive.isDesktop(context) ||
+                                Responsive.isk4Desktop(context)
+                            ? 16
+                            : 10,
+                        letterSpacing: .5,
+                      ),
+                      textAlign: TextAlign.left,
                     ),
-                    textAlign: TextAlign.left,
                   ),
-                ),
-              ],
-            ),
-
-            SizedBox(
-              height: height * .05,
-            ),
-            DottedDashedLine(
-              height: 20,
-              width: 200,
-              axis: Axis.horizontal,
-              dashHeight: 8,
-              dashColor: Colors.orange,
-            ),
-            SizedBox(
-              width: width * .02,
-            ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  "Help Desk 24h/7",
-                  style: TextStyle(
-                    color: AppColor.green,
-                    fontFamily: 'Arial',
-                    fontSize: 16,
-                    letterSpacing: .5,
+                  SizedBox(
+                    width: width * .02,
                   ),
-                ),
-                Text(
-                  "8484914105",
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontFamily: 'Arial',
-                    fontWeight: FontWeight.bold,
-                    fontSize: Responsive.isDesktop(context) ||
-                        Responsive.isk4Desktop(context)
-                        ? 30
-                        : 25,
-                    letterSpacing: .5,
+                  const DottedDashedLine(
+                    height: 40,
+                    width: 0,
+                    axis: Axis.vertical,
+                    dashHeight: 8,
+                    dashColor: Colors.orange,
                   ),
-                ),
-              ],
-            ),
-
-          ],
-        ));
+                  SizedBox(
+                    width: width * .02,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        "Help Desk 24h/7",
+                        style: TextStyle(
+                          color: AppColor.green,
+                          fontFamily: 'Arial',
+                          fontSize: 16,
+                          letterSpacing: .5,
+                        ),
+                      ),
+                      Text(
+                        "8484914105",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontFamily: 'Arial',
+                          fontWeight: FontWeight.bold,
+                          fontSize: Responsive.isDesktop(context) ||
+                                  Responsive.isk4Desktop(context)
+                              ? 30
+                              : 25,
+                          letterSpacing: .5,
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: height * .2,
+                  )
+                ],
+              )
+            : Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Row(
+                    children: [
+                      Image.asset("images/phone-image.png"),
+                      SizedBox(
+                        width: width * .02,
+                      ),
+                      SizedBox(
+                        width: width * .5,
+                        child: Text(
+                          "Leverage and amplify your product value by cooperating with CodeElan Technologies. Collaborate with our innovative custom software development company!",
+                          style: TextStyle(
+                            color: const Color.fromRGBO(79, 79, 103, 1),
+                            fontFamily: 'Arial',
+                            fontSize: Responsive.isDesktop(context) ||
+                                    Responsive.isk4Desktop(context)
+                                ? 16
+                                : 10,
+                            letterSpacing: .5,
+                          ),
+                          textAlign: TextAlign.left,
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: height * .05,
+                  ),
+                  const DottedDashedLine(
+                    height: 20,
+                    width: 200,
+                    axis: Axis.horizontal,
+                    dashHeight: 8,
+                    dashColor: Colors.orange,
+                  ),
+                  SizedBox(
+                    width: width * .02,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        "Help Desk 24h/7",
+                        style: TextStyle(
+                          color: AppColor.green,
+                            fontFamily: 'Arial',
+                          fontSize: 16,
+                          letterSpacing: .5,
+                        ),
+                      ),
+                      Text(
+                        "8484914105",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontFamily: 'Arial',
+                          fontWeight: FontWeight.bold,
+                          fontSize: Responsive.isDesktop(context) ||
+                                  Responsive.isk4Desktop(context)
+                              ? 30
+                              : 25,
+                          letterSpacing: .5,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ));
   }
 
   Widget blog() {
     return Container(
         // width: 100,
-        alignment: Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
-            ? Alignment.center:Alignment.centerLeft,
-        color: Color.fromRGBO(235, 235, 235, 1),
-        padding: EdgeInsets.all(5),
+        alignment:
+            Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
+                ? Alignment.center
+                : Alignment.centerLeft,
+        // color: const Color.fromRGBO(235, 235, 235, 1),
+        padding: const EdgeInsets.all(5),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -1436,7 +1548,7 @@ class _HomePageState extends State<HomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Row(
+                const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Text(
@@ -1465,7 +1577,7 @@ class _HomePageState extends State<HomePage> {
                                     Responsive.isk4Desktop(context)
                                 ? 36
                                 : 26,
-                            color: Color.fromRGBO(29, 27, 76, 1),
+                            color: const Color.fromRGBO(29, 27, 76, 1),
                             letterSpacing: .5,
                             fontWeight: FontWeight.bold),
                         textAlign: TextAlign.left,
@@ -1476,11 +1588,14 @@ class _HomePageState extends State<HomePage> {
                       width: width * .02,
                     ),
                     SizedBox(
-                      width:Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
-                          ? width * .28:width *.5,                           child: Text(
+                      width: Responsive.isDesktop(context) ||
+                              Responsive.isk4Desktop(context)
+                          ? width * .28
+                          : width * .5,
+                      child: Text(
                         "The must read collection of blogs on software development and testing featuring articles on API testing tools, test automation, achieving excellence in software engineering and more.",
                         style: TextStyle(
-                          color: Color.fromRGBO(79, 79, 103, 1),
+                          color: const Color.fromRGBO(79, 79, 103, 1),
                           fontFamily: 'Arial',
                           fontSize: Responsive.isDesktop(context) ||
                                   Responsive.isk4Desktop(context)
@@ -1500,7 +1615,7 @@ class _HomePageState extends State<HomePage> {
         ));
   }
 
-  Widget footerABoutUs(){
+  Widget footerABoutUs() {
     return Container();
   }
 }

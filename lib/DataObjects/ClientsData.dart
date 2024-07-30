@@ -8,32 +8,31 @@ class ClientsList {
 
 const List<ClientsList> clientList = <ClientsList>[
   ClientsList(
-    image: 'ACMEMinds-Logo.png',
+    image: 'images/ACMEMinds-Logo.png',
   ),
   ClientsList(
-    image: 'BanyanTree-Logo.png',
+    image: 'images/BanyanTree-Logo.png',
   ),
   ClientsList(
-    image: 'Idea-bridge-Logo.png',
+    image: 'images/Idea-bridge-Logo.png',
   ),
   ClientsList(
-    image: 'PlusInnovation-Logo.png',
+    image: 'images/PlusInnovation-Logo.png',
   ),
   ClientsList(
-    image: 'LoadShare-Logo.png',
+    image: 'images/LoadShare-Logo.png',
   ),
   ClientsList(
-    image: 'Techno-Logo.png',
+    image: 'images/Techno-Logo.png',
   ),
   ClientsList(
-    image: 'VoniGo-Logo.png',
+    image: 'images/VoniGo-Logo.png',
   ),
-
   ClientsList(
-    image: 'SunPower-Logo.png',
+    image: 'images/SunPower-Logo.png',
   ), ClientsList(
-    image: 'ParentPayGroup.png',
+    image: 'images/ParentPayGroup.png',
   ), ClientsList(
-    image: 'Unique-Solutions.png',
+    image: 'images/Unique-Solutions.png',
   ),
 ];

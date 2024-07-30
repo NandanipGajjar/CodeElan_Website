@@ -1,5 +1,8 @@
 # codeelan_web
      flutter build web --web-renderer html
+ 
+
+local server command :  serve .
 
 FOR NODEJS
 https://codewithmayank.in/deploying-flutter-web-with-node-js-server/

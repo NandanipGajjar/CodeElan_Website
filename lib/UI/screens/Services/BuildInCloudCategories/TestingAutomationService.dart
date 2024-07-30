@@ -340,7 +340,7 @@ class _TestingAutomationServicesState extends State<TestingAutomationServices>
             Container(
                 color: Colors.white,
                 child: Image.asset(
-                  'TestingAutomationProcessBanner.jpg',
+                  'images/TestingAutomationProcessBanner.jpg',
                   height: height * .85,
                 )),
             howWorks(),
@@ -850,7 +850,7 @@ class _TestingAutomationServicesState extends State<TestingAutomationServices>
                         padding: const EdgeInsets.all(15),
                         child: ClipOval(
                           child: Image.asset(
-                            'Logo-Inverted.jpg',
+                            'images/Logo-Inverted.jpg',
                             // width: 100.0,
                           ),
                         ),
@@ -872,7 +872,7 @@ class _TestingAutomationServicesState extends State<TestingAutomationServices>
                       padding: const EdgeInsets.all(15),
                       child: ClipOval(
                         child: Image.asset(
-                          'Logo-Inverted.jpg',
+                          'images/Logo-Inverted.jpg',
                           // width: 100.0,
                         ),
                       ),

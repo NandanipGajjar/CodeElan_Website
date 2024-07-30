@@ -203,7 +203,7 @@ class _BuildCloudFoundationState extends State<BuildCloudFoundation>
                           axis: Axis.horizontal,
                           axisAlignment: -1,
                           child: Image.asset(
-                            'cloudFoundation.jpg',
+                            'images/cloudFoundation.jpg',
                             height: 300,
                           ),
                         ),
@@ -327,7 +327,7 @@ class _BuildCloudFoundationState extends State<BuildCloudFoundation>
                                 axis: Axis.horizontal,
                                 axisAlignment: -5,
                                 child: Image.asset(
-                                  'cloudFoundation.jpg',
+                                  'images/cloudFoundation.jpg',
                                   height: 300,
                                 ),
                               ),
@@ -837,7 +837,7 @@ class _BuildCloudFoundationState extends State<BuildCloudFoundation>
                   padding: const EdgeInsets.all(15),
                   child: ClipOval(
                     child: Image.asset(
-                      'Logo-Inverted.jpg',
+                      'images/Logo-Inverted.jpg',
                       // width: 100.0,
                     ),
                   ),
@@ -858,7 +858,7 @@ class _BuildCloudFoundationState extends State<BuildCloudFoundation>
                 padding: const EdgeInsets.all(15),
                 child: ClipOval(
                   child: Image.asset(
-                    'Logo-Inverted.jpg',
+                    'images/Logo-Inverted.jpg',
                     // width: 100.0,
                   ),
                 ),

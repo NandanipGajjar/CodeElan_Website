@@ -9,22 +9,22 @@ class LeaderList {
 
 const List<LeaderList> leadershipData = <LeaderList>[
   LeaderList(
-    image: 'deepak.png',
+    image: 'images/deepak.png',
      name: 'DEEPAK MATHUR',
     designation: 'Founder and Designated Partner',
   ),
   LeaderList(
-    image: 'chandrakant.jpg',
+    image: 'images/chandrakant.jpg',
       name: 'CHANDRAKANT DOLLIN',
     designation: 'Chief Executive Officer(CEO)',
   ),
   LeaderList(
-    image: 'Shailesh.png',
+    image: 'images/Shailesh.png',
      name: 'SHAILESH AMDEKAR',
     designation: 'Consultant Strategic Business Partner',
   ),
   LeaderList(
-    image: 'Rajesh-Kanade.png',
+    image: 'images/Rajesh-Kanade.png',
      name: 'RAJESH KANADE',
     designation: 'Chief Technical Officer',
   ),

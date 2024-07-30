@@ -34,7 +34,7 @@ class _IPSoolutionsUIState extends State<IPSoolutionsUI> {
               alignment: Alignment.center,
               children: [
                 Image.asset(
-                  'IPsolutions_banner.jpg',
+                  'images/IPsolutions_banner.jpg',
                   height: 250,
                   width: width,
                   fit: BoxFit.cover,
@@ -279,7 +279,7 @@ class _IPSoolutionsUIState extends State<IPSoolutionsUI> {
                             child: Column(
                               children: [
                                 Image.asset(
-                                  'IPSolution_WeRecruit.jpg',
+                                  'images/IPSolution_WeRecruit.jpg',
                                 ),
                                 SizedBox(
                                   height: height * .02,
@@ -307,7 +307,7 @@ class _IPSoolutionsUIState extends State<IPSoolutionsUI> {
                             child: Column(
                               children: [
                                 Image.asset(
-                                  'IPSolution_Magic-Inbox.jpg',
+                                  'images/IPSolution_Magic-Inbox.jpg',
                                 ),
                                 SizedBox(
                                   height: height * .02,
@@ -335,7 +335,7 @@ class _IPSoolutionsUIState extends State<IPSoolutionsUI> {
                             child: Column(
                               children: [
                                 Image.asset(
-                                  'IPSolution_WeModdle.jpg',
+                                  'images/IPSolution_WeModdle.jpg',
                                 ),
                                 SizedBox(
                                   height: height * .02,
@@ -367,7 +367,7 @@ class _IPSoolutionsUIState extends State<IPSoolutionsUI> {
                             child: Column(
                               children: [
                                 Image.asset(
-                                  'IPSolution_Magic-Inbox.jpg',
+                                  'images/IPSolution_Magic-Inbox.jpg',
                                 ),
                                 SizedBox(
                                   height: height * .02,
@@ -395,7 +395,7 @@ class _IPSoolutionsUIState extends State<IPSoolutionsUI> {
                             child: Column(
                               children: [
                                 Image.asset(
-                                  'IPSolution_Magic-Inbox.jpg',
+                                  'images/IPSolution_Magic-Inbox.jpg',
                                 ),
                                 SizedBox(
                                   height: height * .02,
@@ -423,7 +423,7 @@ class _IPSoolutionsUIState extends State<IPSoolutionsUI> {
                             child: Column(
                               children: [
                                 Image.asset(
-                                  'IPSolution_WeModdle.jpg',
+                                  'images/IPSolution_WeModdle.jpg',
                                 ),
                                 SizedBox(
                                   height: height * .02,

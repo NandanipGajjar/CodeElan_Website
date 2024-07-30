@@ -213,7 +213,7 @@ class _KubernetAdoptionState extends State<KubernetAdoption>
                           axis: Axis.horizontal,
                           axisAlignment: -1,
                           child: Image.asset(
-                            'kubernetes_bg.jpg',
+                            'images/kubernetes_bg.jpg',
                             height: 300,
                           ),
                         ),
@@ -338,7 +338,7 @@ class _KubernetAdoptionState extends State<KubernetAdoption>
                                 axis: Axis.horizontal,
                                 axisAlignment: -5,
                                 child: Image.asset(
-                                  'kubernetes_bg.jpg',
+                                  'images/kubernetes_bg.jpg',
                                   height: 300,
                                 ),
                               ),
@@ -615,7 +615,7 @@ class _KubernetAdoptionState extends State<KubernetAdoption>
                       axis: Axis.horizontal,
                       axisAlignment: -1,
                       child: Image.asset(
-                        'cloud-services.png',
+                        'images/cloud-services.png',
                         height: 400,
                       ),
                     ),
@@ -898,7 +898,7 @@ class _KubernetAdoptionState extends State<KubernetAdoption>
                           padding: const EdgeInsets.all(15),
                           child: ClipOval(
                             child: Image.asset(
-                              'Logo-Inverted.jpg',
+                              'images/Logo-Inverted.jpg',
                               // width: 100.0,
                             ),
                           ),
@@ -921,7 +921,7 @@ class _KubernetAdoptionState extends State<KubernetAdoption>
                       padding: const EdgeInsets.all(15),
                       child: ClipOval(
                         child: Image.asset(
-                          'Logo-Inverted.jpg',
+                          'images/Logo-Inverted.jpg',
                           // width: 100.0,
                         ),
                       ),

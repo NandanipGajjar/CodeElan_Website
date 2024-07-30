@@ -79,7 +79,7 @@ class _ContactusState extends State<Contactus> {
               alignment: Alignment.center,
               children: [
                 Image.asset(
-                  'contactus-cover.jpg',
+                  'images/contactus-cover.jpg',
                   height: 250,
                   width: width,
                   fit: BoxFit.cover,

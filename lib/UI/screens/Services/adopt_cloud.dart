@@ -39,7 +39,7 @@ class _AdoptCloudUIState extends State<AdoptCloudUI> {
               alignment: Alignment.center,
               children: [
                 Image.asset(
-                  'Adopt-Cloud-banner.png',
+                  'images/Adopt-Cloud-banner.png',
                   height: 300,
                   width: width,
                   fit: BoxFit.cover,
@@ -96,7 +96,7 @@ class _AdoptCloudUIState extends State<AdoptCloudUI> {
             ),
             AdoptCloud(),
             Image.asset(
-              'CodeElan_Adopt_cloud_Process.gif',
+              'images/CodeElan_Adopt_cloud_Process.gif',
               // height: height * .8,
             ),
             buildCloudWidget(),
@@ -193,7 +193,7 @@ class _AdoptCloudUIState extends State<AdoptCloudUI> {
                 ],
               ),
               Image.asset(
-                'adopt-cloud-bg-1.jpg',
+                'images/adopt-cloud-bg-1.jpg',
                 height: height * .8,
               ),
             ],
@@ -244,7 +244,7 @@ class _AdoptCloudUIState extends State<AdoptCloudUI> {
                   },
                 ),
                 Image.asset(
-                  'adopt-cloud-bg-1.jpg',
+                  'images/adopt-cloud-bg-1.jpg',
                   height: height * .8,
                 )
               ],
@@ -262,7 +262,7 @@ class _AdoptCloudUIState extends State<AdoptCloudUI> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Image.asset(
-                  'Build_cloud_foundation.png',
+                  'images/Build_cloud_foundation.png',
                   height: height * .7,
                 ),
                 SizedBox(
@@ -336,7 +336,7 @@ class _AdoptCloudUIState extends State<AdoptCloudUI> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Image.asset(
-                    'Build_cloud_foundation.png',
+                    'images/Build_cloud_foundation.png',
                     // height: height * .7,
                   ),
                   SizedBox(
@@ -462,7 +462,7 @@ class _AdoptCloudUIState extends State<AdoptCloudUI> {
                   width: width * .05,
                 ),
                 Image.asset(
-                  'Cloud-migration.png',
+                  'images/Cloud-migration.png',
                   height: height * .5,
                 ),
               ],
@@ -472,7 +472,7 @@ class _AdoptCloudUIState extends State<AdoptCloudUI> {
               child: Column(
                 children: [
                   Image.asset(
-                    'Cloud-migration.png',
+                    'images/Cloud-migration.png',
                     height: height * .5,
                   ),
                   Text(
@@ -531,7 +531,7 @@ class _AdoptCloudUIState extends State<AdoptCloudUI> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Image.asset(
-                  'kubernet.png',
+                  'images/kubernet.png',
                 ),
                 SizedBox(
                   width: width * .1,
@@ -603,7 +603,7 @@ class _AdoptCloudUIState extends State<AdoptCloudUI> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'kubernet.png',
+                    'images/kubernet.png',
                     fit: BoxFit.cover,
                   ),
                   SizedBox(
@@ -660,33 +660,33 @@ class _AdoptCloudUIState extends State<AdoptCloudUI> {
       padding: EdgeInsets.all(30),
       child: Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
           ? Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                iconBox('icons-server.png', 'Comprehensive Services'),
-                iconBox('user-setting.png', 'Engineering-Led Methodology'),
-                iconBox(
-                    'swiftTengibleResult.png', 'Swift And Tangible Results'),
-                iconBox('process-icon.png', 'Value-Driven Operations'),
-              ],
-            )
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          iconBox('images/icons-server.png', 'Comprehensive Services'),
+          iconBox('images/user-setting.png', 'Engineering-Led Methodology'),
+          iconBox(
+              'images/swiftTengibleResult.png', 'Swift And Tangible Results'),
+          iconBox('images/process-icon.png', 'Value-Driven Operations'),
+        ],
+      )
           : Column(children: [
-              iconBox('icons-server.png', 'Comprehensive Services'),
-              SizedBox(
-                height: height * .1,
-              ),
-              iconBox('user-setting.png', 'Engineering-Led Methodology'),
-              SizedBox(
-                height: height * .1,
-              ),
-              iconBox('swiftTengibleResult.png', 'Swift And Tangible Results'),
-              SizedBox(
-                height: height * .1,
-              ),
-              iconBox('process-icon.png', 'Value-Driven Operations'),
-              SizedBox(
-                height: height * .1,
-              ),
-            ]),
+        iconBox('images/icons-server.png', 'Comprehensive Services'),
+        SizedBox(
+          height: height * .1,
+        ),
+        iconBox('images/user-setting.png', 'Engineering-Led Methodology'),
+        SizedBox(
+          height: height * .1,
+        ),
+        iconBox('images/swiftTengibleResult.png', 'Swift And Tangible Results'),
+        SizedBox(
+          height: height * .1,
+        ),
+        iconBox('images/process-icon.png', 'Value-Driven Operations'),
+        SizedBox(
+          height: height * .1,
+        ),
+      ]),
     );
   }
 
@@ -914,7 +914,7 @@ class _AdoptCloudUIState extends State<AdoptCloudUI> {
                     top: -10,
                     left: 50,
                     child: Image.asset(
-                      "get-quote.png",
+                      "images/get-quote.png",
                       color: AppColor.grey,
                       height: 60,
                     ),

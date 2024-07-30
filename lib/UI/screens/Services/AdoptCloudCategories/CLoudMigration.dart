@@ -209,7 +209,7 @@ class _CloudMigrationState extends State<CloudMigration>
                           axis: Axis.horizontal,
                           axisAlignment: -1,
                           child: Image.asset(
-                            'cloudmigrationBG.png',
+                            'images/cloudmigrationBG.png',
                             height: 300,
                           ),
                         ),
@@ -333,7 +333,7 @@ class _CloudMigrationState extends State<CloudMigration>
                                 axis: Axis.horizontal,
                                 axisAlignment: -5,
                                 child: Image.asset(
-                                  'cloudmigrationBG.png',
+                                  'images/cloudmigrationBG.png',
                                   height: 300,
                                 ),
                               ),
@@ -534,7 +534,7 @@ class _CloudMigrationState extends State<CloudMigration>
               width: Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
                   ?  width * .75:width,
               alignment: Alignment.center,
-              child: Image.asset('Cloud-Migration-What-we-offer_1_.png'))
+              child: Image.asset('images/Cloud-Migration-What-we-offer_1_.png'))
         ],
       ),
     );
@@ -647,7 +647,7 @@ class _CloudMigrationState extends State<CloudMigration>
                 axis: Axis.horizontal,
                 axisAlignment: -1,
                 child: Image.asset(
-                  'cloud-services.png',
+                  'images/cloud-services.png',
                   height: 400,
                 ),
               ),
@@ -675,7 +675,7 @@ class _CloudMigrationState extends State<CloudMigration>
                           axis: Axis.horizontal,
                           axisAlignment: -1,
                           child: Image.asset(
-                            'cloud-services.png',
+                            'images/cloud-services.png',
                             height: 400,
                           ),
                         ),
@@ -927,7 +927,7 @@ class _CloudMigrationState extends State<CloudMigration>
                         padding: const EdgeInsets.all(15),
                         child: ClipOval(
                           child: Image.asset(
-                            'Logo-Inverted.jpg',
+                            'images/Logo-Inverted.jpg',
                             // width: 100.0,
                           ),
                         ),
@@ -949,7 +949,7 @@ class _CloudMigrationState extends State<CloudMigration>
                       padding: const EdgeInsets.all(15),
                       child: ClipOval(
                         child: Image.asset(
-                          'Logo-Inverted.jpg',
+                          'images/Logo-Inverted.jpg',
                           // width: 100.0,
                         ),
                       ),

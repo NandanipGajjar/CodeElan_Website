@@ -33,7 +33,7 @@ class _ServicePageState extends State<ServicePage> {
               alignment: Alignment.center,
               children: [
                 Image.asset(
-                  'service-BG.png',
+                  'images/service-BG.png',
                   height: 250,
                   width: width,
                   fit: BoxFit.cover,
@@ -203,14 +203,14 @@ class _ServicePageState extends State<ServicePage> {
       child: Column(
         children: [
           Image.asset(
-            'Services-home.png',
+            'images/Services-home.png',
             height:
                 Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
                     ? height * .8
                     : height * .4,
           ),
           Image.asset(
-            'Service-home1.png',
+            'images/Service-home1.png',
             height: height * .6,
           ),
           SizedBox(
@@ -242,7 +242,7 @@ class _ServicePageState extends State<ServicePage> {
             ),
           ),
           Image.asset(
-            'Why-CodeElan-service.png',
+            'images/Why-CodeElan-service.png',
             height:
                 Responsive.isDesktop(context) || Responsive.isk4Desktop(context)
                     ? height * .7

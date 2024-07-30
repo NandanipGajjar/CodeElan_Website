@@ -40,7 +40,7 @@ class _BuildInCloudState extends State<BuildInCloud> {
               alignment: Alignment.center,
               children: [
                 Image.asset(
-                  'Build-in-Cloud-banner.jpg',
+                  'images/Build-in-Cloud-banner.jpg',
                   height: 300,
                   width: width,
                   fit: BoxFit.cover,
@@ -144,7 +144,7 @@ class _BuildInCloudState extends State<BuildInCloud> {
                   height: height * .05,
                 ),
                 Image.asset(
-                  'Transformation-to-Cloud-Engineering.jpg',
+                  'images/Transformation-to-Cloud-Engineering.jpg',
                   height: height * .8,
                 ),
               ],
@@ -236,7 +236,7 @@ class _BuildInCloudState extends State<BuildInCloud> {
                 ],
               ),
               Image.asset(
-                'Streamlining-Cloud-Product-Development.jpg',
+                'images/Streamlining-Cloud-Product-Development.jpg',
                 height: height * .8,
               ),
             ],
@@ -283,7 +283,7 @@ class _BuildInCloudState extends State<BuildInCloud> {
                   },
                 ),
                 Image.asset(
-                  'Streamlining-Cloud-Product-Development.jpg',
+                  'images/Streamlining-Cloud-Product-Development.jpg',
                   height: height * .8,
                 )
               ],
@@ -301,7 +301,7 @@ class _BuildInCloudState extends State<BuildInCloud> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Image.asset(
-                  'Product-Development.jpg',
+                  'images/Product-Development.jpg',
                   height: height * .6,
                 ),
                 SizedBox(width: width * .05),
@@ -370,7 +370,7 @@ class _BuildInCloudState extends State<BuildInCloud> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Image.asset(
-                    'Product-Development.jpg',
+                    'images/Product-Development.jpg',
                     // height: height * .7,
                   ),
                   SizedBox(
@@ -432,7 +432,7 @@ class _BuildInCloudState extends State<BuildInCloud> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Image.asset(
-                  'Testing-Automation.jpeg',
+                  'images/Testing-Automation.jpeg',
                   width: width * .4,
                 ),
                 SizedBox(
@@ -503,7 +503,7 @@ class _BuildInCloudState extends State<BuildInCloud> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'Testing-Automation.jpeg',
+                    'images/Testing-Automation.jpeg',
                     // fit: BoxFit.cover,
                   ),
                   SizedBox(
@@ -618,7 +618,7 @@ class _BuildInCloudState extends State<BuildInCloud> {
                   width: width * .05,
                 ),
                 Image.asset(
-                  'Cloud-migration.png',
+                  'images/Cloud-migration.png',
                   height: height * .5,
                 ),
               ],
@@ -628,7 +628,7 @@ class _BuildInCloudState extends State<BuildInCloud> {
               child: Column(
                 children: [
                   Image.asset(
-                    'Cloud-migration.png',
+                    'images/Cloud-migration.png',
                     height: height * .5,
                   ),
                   Text(
@@ -681,27 +681,27 @@ class _BuildInCloudState extends State<BuildInCloud> {
           ? Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                iconBox('icons-server.png', 'Comprehensive Services'),
-                iconBox('user-setting.png', 'Engineering-Led Methodology'),
+                iconBox('images/icons-server.png', 'Comprehensive Services'),
+                iconBox('images/user-setting.png', 'Engineering-Led Methodology'),
                 iconBox(
-                    'swiftTengibleResult.png', 'Swift And Tangible Results'),
-                iconBox('process-icon.png', 'Value-Driven Operations'),
+                    'images/swiftTengibleResult.png', 'Swift And Tangible Results'),
+                iconBox('images/process-icon.png', 'Value-Driven Operations'),
               ],
             )
           : Column(children: [
-              iconBox('icons-server.png', 'Comprehensive Services'),
+              iconBox('images/icons-server.png', 'Comprehensive Services'),
               SizedBox(
                 height: height * .1,
               ),
-              iconBox('user-setting.png', 'Engineering-Led Methodology'),
+              iconBox('images/user-setting.png', 'Engineering-Led Methodology'),
               SizedBox(
                 height: height * .1,
               ),
-              iconBox('swiftTengibleResult.png', 'Swift And Tangible Results'),
+              iconBox('images/swiftTengibleResult.png', 'Swift And Tangible Results'),
               SizedBox(
                 height: height * .1,
               ),
-              iconBox('process-icon.png', 'Value-Driven Operations'),
+              iconBox('images/process-icon.png', 'Value-Driven Operations'),
               SizedBox(
                 height: height * .1,
               ),
@@ -933,7 +933,7 @@ class _BuildInCloudState extends State<BuildInCloud> {
                     top: -10,
                     left: 50,
                     child: Image.asset(
-                      "get-quote.png",
+                      "images/get-quote.png",
                       color: AppColor.grey,
                       height: 60,
                     ),
@@ -950,7 +950,7 @@ class _BuildInCloudState extends State<BuildInCloud> {
               scrollDirection: Axis.horizontal,
               itemCount: 15,
               itemBuilder: (BuildContext context, int index) => Card(
-                child: Center(child: Column(children: [PositionedDirectional(child: Image.asset("get-quote.png",height: 100,))],)),
+                child: Center(child: Column(children: [PositionedDirectional(child: Image.asset("images/get-quote.png",height: 100,))],)),
               ),
             ),
           ),

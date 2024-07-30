@@ -41,7 +41,7 @@ class _AboutusState extends State<Aboutus> {
           SizedBox(
             height: height * .05,
           ),
-          Image.asset('about-gap.png'),
+          Image.asset('images/about-gap.png'),
           SizedBox(
             height: height * .05,
           ),
@@ -55,7 +55,7 @@ class _AboutusState extends State<Aboutus> {
     return   Stack(alignment: Alignment.center,
       children: [
         Image.asset(
-          "about-banner.png",
+          "images/about-banner.png",
           height: 250,width: width,
           fit: BoxFit.cover,
           color: Colors.black,
@@ -126,11 +126,11 @@ class _AboutusState extends State<Aboutus> {
           SizedBox(
             height: height * .05,
           ),
-          Image.asset('about-gap.png'),
+          Image.asset('images/about-gap.png'),
           SizedBox(
             height: height * .05,
           ),
-          Image.asset('knowmore-aboutus.jpg'),
+          Image.asset('images/knowmore-aboutus.jpg'),
           SizedBox(
             height: height * .05,
           ),
@@ -175,7 +175,7 @@ class _AboutusState extends State<Aboutus> {
                   fontSize: 25,
                   height: height * .002,
                   letterSpacing: 1)),
-          Image.asset('Why-About-us-banner.png'),
+          Image.asset('images/Why-About-us-banner.png'),
           SizedBox(
             height: height * .05,
           ),
@@ -557,7 +557,7 @@ class _AboutusState extends State<Aboutus> {
                     left: Responsive.isDesktop(context) || Responsive.isk4Desktop(context)? 380:100,
                     child: Image.asset(
                       alignment: Alignment.center,
-                      "get-quote.png",
+                      "images/get-quote.png",
                       color: Colors.black,
                       height:  Responsive.isDesktop(context) || Responsive.isk4Desktop(context)?60:50,
                     ),
